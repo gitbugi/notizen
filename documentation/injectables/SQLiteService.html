@@ -1,0 +1,3362 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>notizen documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">notizen documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >SQLiteService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/sqlite.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#isService" >isService</a>
+                            </li>
+                            <li>
+                                <a href="#native" >native</a>
+                            </li>
+                            <li>
+                                <a href="#platform" >platform</a>
+                            </li>
+                            <li>
+                                <a href="#sqlite" >sqlite</a>
+                            </li>
+                            <li>
+                                <a href="#sqlitePlugin" >sqlitePlugin</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addSQLiteSuffix" >addSQLiteSuffix</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#addUpgradeStatement" >addUpgradeStatement</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#changeEncryptionSecret" >changeEncryptionSecret</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkConnectionsConsistency" >checkConnectionsConsistency</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#closeAllConnections" >closeAllConnections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#closeConnection" >closeConnection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#closeNCConnection" >closeNCConnection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#copyFromAssets" >copyFromAssets</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createConnection" >createConnection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#createNCConnection" >createNCConnection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteOldDatabases" >deleteOldDatabases</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#echo" >echo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getDatabaseList" >getDatabaseList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getFromHTTPRequest" >getFromHTTPRequest</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMigratableDbList" >getMigratableDbList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getNCDatabasePath" >getNCDatabasePath</a>
+                            </li>
+                            <li>
+                                <a href="#getPlatform" >getPlatform</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#importFromJson" >importFromJson</a>
+                            </li>
+                            <li>
+                                <a href="#initializePlugin" >initializePlugin</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#initWebStore" >initWebStore</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isConnection" >isConnection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isDatabase" >isDatabase</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isJsonValid" >isJsonValid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isNCConnection" >isNCConnection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isNCDatabase" >isNCDatabase</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isSecretStored" >isSecretStored</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#moveDatabasesAndAddSuffix" >moveDatabasesAndAddSuffix</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#retrieveAllConnections" >retrieveAllConnections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#retrieveConnection" >retrieveConnection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#retrieveNCConnection" >retrieveNCConnection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#saveToStore" >saveToStore</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#setEncryptionSecret" >setEncryptionSecret</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/services/sqlite.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addSQLiteSuffix"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addSQLiteSuffix</b></span>
+                        <a href="#addSQLiteSuffix"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addSQLiteSuffix(folderPath?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, dbNameList?: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="425"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:425</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add &quot;SQLite&quot; suffix to old database&#39;s names</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>folderPath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>dbNameList</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addUpgradeStatement"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>addUpgradeStatement</b></span>
+                        <a href="#addUpgradeStatement"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addUpgradeStatement(database: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, toVersion: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, statements: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>addUpgradeStatement</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>database</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>toVersion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>statements</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeEncryptionSecret"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>changeEncryptionSecret</b></span>
+                        <a href="#changeEncryptionSecret"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>changeEncryptionSecret(passphrase: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, oldpassphrase: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>passphrase</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>oldpassphrase</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkConnectionsConsistency"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>checkConnectionsConsistency</b></span>
+                        <a href="#checkConnectionsConsistency"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkConnectionsConsistency()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="360"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:360</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check Connections Consistency</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteResult&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeAllConnections"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>closeAllConnections</b></span>
+                        <a href="#closeAllConnections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>closeAllConnections()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="329"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:329</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Close all existing connections</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeConnection"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>closeConnection</b></span>
+                        <a href="#closeConnection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>closeConnection(database: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, readonly?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="275"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:275</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Close a connection to a database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>database</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>readonly</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeNCConnection"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>closeNCConnection</b></span>
+                        <a href="#closeNCConnection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>closeNCConnection(databasePath: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Close a non-conformed database connection</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>databasePath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Promise<void></p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="copyFromAssets"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>copyFromAssets</b></span>
+                        <a href="#copyFromAssets"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>copyFromAssets(overwrite?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="531"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:531</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Copy databases from public/assets/databases folder to application databases folder</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>overwrite</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createConnection"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createConnection</b></span>
+                        <a href="#createConnection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createConnection(database: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, encrypted: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, mode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, version: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, readonly?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="242"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:242</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create a connection to a database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>database</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>encrypted</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>version</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>readonly</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;SQLiteDBConnection&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createNCConnection"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>createNCConnection</b></span>
+                        <a href="#createNCConnection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createNCConnection(databasePath: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, version: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create a non-conformed database connection</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>databasePath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>version</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;SQLiteDBConnection&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Promise<SQLiteDBConnection></p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteOldDatabases"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteOldDatabases</b></span>
+                        <a href="#deleteOldDatabases"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteOldDatabases(folderPath?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, dbNameList?: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="444"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:444</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete old databases</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>folderPath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>dbNameList</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="echo"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>echo</b></span>
+                        <a href="#echo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>echo(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Echo a value</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capEchoResult&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDatabaseList"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getDatabaseList</b></span>
+                        <a href="#getDatabaseList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDatabaseList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="390"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:390</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the list of databases</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteValues&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFromHTTPRequest"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getFromHTTPRequest</b></span>
+                        <a href="#getFromHTTPRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getFromHTTPRequest(url: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, overwrite?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="481"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:481</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>overwrite</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMigratableDbList"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getMigratableDbList</b></span>
+                        <a href="#getMigratableDbList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMigratableDbList(folderPath?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="404"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:404</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get Migratable databases List</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>folderPath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteValues&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNCDatabasePath"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getNCDatabasePath</b></span>
+                        <a href="#getNCDatabasePath"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getNCDatabasePath(folderPath: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, database: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="126"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:126</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>get a non-conformed database path</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>folderPath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>database</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capNCDatabasePathResult&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Promise<capNCDatabasePathResult></p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPlatform"></a>
+                    <span class="name">
+                        <span ><b>getPlatform</b></span>
+                        <a href="#getPlatform"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPlatform()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="importFromJson"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>importFromJson</b></span>
+                        <a href="#importFromJson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>importFromJson(jsonstring: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="497"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:497</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Import from a Json Object</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>jsonstring</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteChanges&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializePlugin"></a>
+                    <span class="name">
+                        <span ><b>initializePlugin</b></span>
+                        <a href="#initializePlugin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializePlugin()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:23</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Plugin Initialization</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initWebStore"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>initWebStore</b></span>
+                        <a href="#initWebStore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initWebStore()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="548"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:548</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialize the Web store</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isConnection"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isConnection</b></span>
+                        <a href="#isConnection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isConnection(database: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, readonly?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="344"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:344</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if connection exists</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>database</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>readonly</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteResult&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isDatabase"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isDatabase</b></span>
+                        <a href="#isDatabase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isDatabase(database: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="376"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:376</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if database exists</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>database</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteResult&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isJsonValid"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isJsonValid</b></span>
+                        <a href="#isJsonValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isJsonValid(jsonstring: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="515"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:515</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Is Json Object Valid</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>jsonstring</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Check the validity of a given Json Object</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteResult&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNCConnection"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isNCConnection</b></span>
+                        <a href="#isNCConnection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isNCConnection(databasePath: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="189"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:189</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if a non-conformed databaseconnection exists</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>databasePath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteResult&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Promise<capSQLiteResult></p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNCDatabase"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isNCDatabase</b></span>
+                        <a href="#isNCDatabase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isNCDatabase(databasePath: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="224"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:224</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if a non conformed database exists</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>databasePath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteResult&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Promise<capSQLiteResult></p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isSecretStored"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isSecretStored</b></span>
+                        <a href="#isSecretStored"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isSecretStored()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;capSQLiteResult&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moveDatabasesAndAddSuffix"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>moveDatabasesAndAddSuffix</b></span>
+                        <a href="#moveDatabasesAndAddSuffix"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>moveDatabasesAndAddSuffix(folderPath?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, dbNameList?: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="468"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:468</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Moves database files from a given folder to the database location where
+they can be read, it also changes their suffix.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>folderPath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>the folder to move from</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>dbNameList</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>the files to move, empty list means all the files</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="retrieveAllConnections"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>retrieveAllConnections</b></span>
+                        <a href="#retrieveAllConnections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>retrieveAllConnections()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="308"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:308</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve all existing connections</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;Map&lt;string, SQLiteDBConnection&gt;&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="retrieveConnection"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>retrieveConnection</b></span>
+                        <a href="#retrieveConnection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>retrieveConnection(database: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, readonly?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="292"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:292</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve an existing connection to a database</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>database</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>readonly</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;SQLiteDBConnection&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="retrieveNCConnection"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>retrieveNCConnection</b></span>
+                        <a href="#retrieveNCConnection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>retrieveNCConnection(databasePath: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="207"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:207</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve a non-conformed database connection</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>databasePath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;SQLiteDBConnection&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Promise<SQLiteDBConnection></p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveToStore"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>saveToStore</b></span>
+                        <a href="#saveToStore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveToStore(database: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="567"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:567</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Save a database to store</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>database</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setEncryptionSecret"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>setEncryptionSecret</b></span>
+                        <a href="#setEncryptionSecret"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setEncryptionSecret(passphrase: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/services/sqlite.service.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>passphrase</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isService"></a>
+                    <span class="name">
+                        <span ><b>isService</b></span>
+                        <a href="#isService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/services/sqlite.service.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="native"></a>
+                    <span class="name">
+                        <span ><b>native</b></span>
+                        <a href="#native"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/services/sqlite.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="platform"></a>
+                    <span class="name">
+                        <span ><b>platform</b></span>
+                        <a href="#platform"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/services/sqlite.service.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sqlite"></a>
+                    <span class="name">
+                        <span ><b>sqlite</b></span>
+                        <a href="#sqlite"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>SQLiteConnection</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/services/sqlite.service.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sqlitePlugin"></a>
+                    <span class="name">
+                        <span ><b>sqlitePlugin</b></span>
+                        <a href="#sqlitePlugin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/services/sqlite.service.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+
+import { Capacitor } from &#x27;@capacitor/core&#x27;;
+import { CapacitorSQLite, SQLiteDBConnection, SQLiteConnection, capSQLiteSet,
+         capSQLiteChanges, capSQLiteValues, capEchoResult, capSQLiteResult,
+         capNCDatabasePathResult } from &#x27;@capacitor-community/sqlite&#x27;;
+
+@Injectable()
+
+export class SQLiteService {
+    sqlite: SQLiteConnection;
+    isService: boolean &#x3D; false;
+    platform: string;
+    sqlitePlugin: any;
+    native: boolean &#x3D; false;
+
+    constructor() {
+    }
+    /**
+     * Plugin Initialization
+     */
+    initializePlugin(): Promise&lt;boolean&gt; {
+        return new Promise (resolve &#x3D;&gt; {
+            this.platform &#x3D; Capacitor.getPlatform();
+            if(this.platform &#x3D;&#x3D;&#x3D; &#x27;ios&#x27; || this.platform &#x3D;&#x3D;&#x3D; &#x27;android&#x27;) this.native &#x3D; true;
+            this.sqlitePlugin &#x3D; CapacitorSQLite;
+            this.sqlite &#x3D; new SQLiteConnection(this.sqlitePlugin);
+            this.isService &#x3D; true;
+            resolve(true);
+        });
+    }
+    getPlatform() {
+        return this.platform;
+    }
+    /**
+     * Echo a value
+     * @param value 
+     */
+    async echo(value: string): Promise&lt;capEchoResult&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const ret &#x3D; await this.sqlite.echo(value);
+                return Promise.resolve(ret);
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&quot;no connection open&quot;));
+        }
+    }
+    async isSecretStored(): Promise&lt;capSQLiteResult&gt; {
+        if(!this.native) {
+            return Promise.reject(new Error(&#x60;Not implemented for ${this.platform} platform&#x60;));
+        }
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.isSecretStored());
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    async setEncryptionSecret(passphrase: string): Promise&lt;void&gt; {
+        if(!this.native) {
+            return Promise.reject(new Error(&#x60;Not implemented for ${this.platform} platform&#x60;));
+        }
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.setEncryptionSecret(passphrase));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+
+    }
+
+    async changeEncryptionSecret(passphrase: string, oldpassphrase: string): Promise&lt;void&gt; {
+        if(!this.native) {
+            return Promise.reject(new Error(&#x60;Not implemented for ${this.platform} platform&#x60;));
+        }
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.changeEncryptionSecret(passphrase, oldpassphrase));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+
+    }
+
+    /**
+     * addUpgradeStatement
+     * @param database 
+     * @param toVersion 
+     * @param statements 
+     */
+    async addUpgradeStatement(database:string,
+                              toVersion: number, statements: string[])
+                                        : Promise&lt;void&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                await this.sqlite.addUpgradeStatement(database, toVersion,
+                                                      statements);
+                return Promise.resolve();
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open for ${database}&#x60;));
+        }                             
+    }
+    /**
+     * get a non-conformed database path
+     * @param path
+     * @param database
+     * @returns Promise&lt;capNCDatabasePathResult&gt;
+     * @since 3.3.3-1
+     */
+    async getNCDatabasePath(folderPath: string, database: string): Promise&lt;capNCDatabasePathResult&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const res: capNCDatabasePathResult &#x3D; await this.sqlite.getNCDatabasePath(
+                                                        folderPath, database);
+                return Promise.resolve(res);
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open for ${database}&#x60;));
+        }
+
+    }
+    /**
+     * Create a non-conformed database connection
+     * @param databasePath
+     * @param version
+     * @returns Promise&lt;SQLiteDBConnection&gt;
+     * @since 3.3.3-1
+     */
+    async createNCConnection(databasePath: string, version: number): Promise&lt;SQLiteDBConnection&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const db: SQLiteDBConnection &#x3D; await this.sqlite.createNCConnection(
+                                databasePath, version);
+                if (db !&#x3D; null) {
+                    return Promise.resolve(db);
+                } else {
+                    return Promise.reject(new Error(&#x60;no db returned is null&#x60;));
+                }
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open for ${databasePath}&#x60;));
+        }
+        
+    }
+    /**
+     * Close a non-conformed database connection
+     * @param databasePath
+     * @returns Promise&lt;void&gt;
+     * @since 3.3.3-1
+     */
+    async closeNCConnection(databasePath: string): Promise&lt;void&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                await this.sqlite.closeNCConnection(databasePath);
+                return Promise.resolve();
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open for ${databasePath}&#x60;));
+        }
+    }
+    /**
+     * Check if a non-conformed databaseconnection exists
+     * @param databasePath
+     * @returns Promise&lt;capSQLiteResult&gt;
+     * @since 3.3.3-1
+     */
+    async isNCConnection(databasePath: string): Promise&lt;capSQLiteResult&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.isNCConnection(databasePath));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+            
+    }
+    /**
+     * Retrieve a non-conformed database connection
+     * @param databasePath
+     * @returns Promise&lt;SQLiteDBConnection&gt;
+     * @since 3.3.3-1
+     */
+     async retrieveNCConnection(databasePath: string): Promise&lt;SQLiteDBConnection&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.retrieveNCConnection(databasePath));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open for ${databasePath}&#x60;));
+        }
+    }
+    /**
+     * Check if a non conformed database exists
+     * @param databasePath
+     * @returns Promise&lt;capSQLiteResult&gt;
+     * @since 3.3.3-1
+     */
+    async isNCDatabase(databasePath: string): Promise&lt;capSQLiteResult&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.isNCDatabase(databasePath));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    /**
+     * Create a connection to a database
+     * @param database 
+     * @param encrypted 
+     * @param mode 
+     * @param version 
+     */
+    async createConnection(database:string, encrypted: boolean,
+                           mode: string, version: number, readonly?: boolean
+                           ): Promise&lt;SQLiteDBConnection&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+/*                if(encrypted) {
+                    if(this.native) {
+                        const isSet &#x3D; await this.sqlite.isSecretStored()
+                        if(!isSet.result) {
+                            return Promise.reject(new Error(&#x60;no secret phrase registered&#x60;));
+                        }
+                    }
+                }
+*/
+               const readOnly &#x3D; readonly ? readonly : false;
+               const db: SQLiteDBConnection &#x3D; await this.sqlite.createConnection(
+                                database, encrypted, mode, version, readOnly);
+                if (db !&#x3D; null) {
+                    return Promise.resolve(db);
+                } else {
+                    return Promise.reject(new Error(&#x60;no db returned is null&#x60;));
+                }
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open for ${database}&#x60;));
+        }
+    }
+    /**
+     * Close a connection to a database
+     * @param database 
+     */
+    async closeConnection(database:string, readonly?: boolean): Promise&lt;void&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const readOnly &#x3D; readonly ? readonly : false;
+                await this.sqlite.closeConnection(database, readOnly);
+                return Promise.resolve();
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open for ${database}&#x60;));
+        }
+    }
+    /**
+     * Retrieve an existing connection to a database
+     * @param database 
+     */
+    async retrieveConnection(database:string, readonly?: boolean): 
+            Promise&lt;SQLiteDBConnection&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const readOnly &#x3D; readonly ? readonly : false;
+                return Promise.resolve(await this.sqlite.retrieveConnection(database, readOnly));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open for ${database}&#x60;));
+        }
+    }
+    /**
+     * Retrieve all existing connections
+     */
+    async retrieveAllConnections(): 
+                    Promise&lt;Map&lt;string, SQLiteDBConnection&gt;&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const myConns &#x3D;  await this.sqlite.retrieveAllConnections();
+                let keys &#x3D; [...myConns.keys()];
+                keys.forEach( (value) &#x3D;&gt; {
+                    console.log(&quot;Connection: &quot; + value);
+                }); 
+
+                return Promise.resolve(myConns);
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }               
+    }
+    /**
+     * Close all existing connections
+     */
+    async closeAllConnections(): Promise&lt;void&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.closeAllConnections());
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    /**
+     * Check if connection exists
+     * @param database 
+     */
+     async isConnection(database: string, readonly?: boolean): Promise&lt;capSQLiteResult&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const readOnly &#x3D; readonly ? readonly : false;
+                return Promise.resolve(await this.sqlite.isConnection(database, readOnly));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    /**
+     * Check Connections Consistency
+     * @returns 
+     */
+    async checkConnectionsConsistency(): Promise&lt;capSQLiteResult&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const res &#x3D; await this.sqlite.checkConnectionsConsistency();
+                return Promise.resolve(res);
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    /**
+     * Check if database exists
+     * @param database 
+     */
+    async isDatabase(database: string): Promise&lt;capSQLiteResult&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.isDatabase(database));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    /**
+     * Get the list of databases
+     */    
+    async getDatabaseList() : Promise&lt;capSQLiteValues&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.getDatabaseList());
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    /**
+     * Get Migratable databases List
+     */    
+    async getMigratableDbList(folderPath?: string): Promise&lt;capSQLiteValues&gt;{
+        if(!this.native) {
+            return Promise.reject(new Error(&#x60;Not implemented for ${this.platform} platform&#x60;));
+        }
+        if(this.sqlite !&#x3D; null) {
+            try {
+                if(!folderPath || folderPath.length &#x3D;&#x3D;&#x3D; 0) {
+                    return Promise.reject(new Error(&#x60;You must provide a folder path&#x60;));
+                }
+                return Promise.resolve(await this.sqlite.getMigratableDbList(folderPath));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    
+    /**
+     * Add &quot;SQLite&quot; suffix to old database&#x27;s names
+     */    
+    async addSQLiteSuffix(folderPath?: string, dbNameList?: string[]): Promise&lt;void&gt;{
+        if(!this.native) {
+            return Promise.reject(new Error(&#x60;Not implemented for ${this.platform} platform&#x60;));
+        }
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const path: string &#x3D; folderPath ? folderPath : &quot;default&quot;;
+                const dbList: string[] &#x3D; dbNameList ? dbNameList : [];
+                return Promise.resolve(await this.sqlite.addSQLiteSuffix(path, dbList));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    /**
+     * Delete old databases
+     */    
+    async deleteOldDatabases(folderPath?: string, dbNameList?: string[]): Promise&lt;void&gt;{
+        if(!this.native) {
+            return Promise.reject(new Error(&#x60;Not implemented for ${this.platform} platform&#x60;));
+        }
+        if(this.sqlite !&#x3D; null) {
+            try {
+                const path: string &#x3D; folderPath ? folderPath : &quot;default&quot;;
+                const dbList: string[] &#x3D; dbNameList ? dbNameList : [];
+                return Promise.resolve(await this.sqlite.deleteOldDatabases(path, dbList));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+
+    /**
+     * Moves database files from a given folder to the database location where
+     * they can be read, it also changes their suffix.
+     * @param folderPath the folder to move from
+     * @param dbNameList the files to move, empty list means all the files
+     * @returns 
+     */
+    async moveDatabasesAndAddSuffix(folderPath?: string, dbNameList?: string[]): Promise&lt;void&gt;{
+        if(!this.native) {
+            throw new Error(&#x60;Not implemented for ${this.platform} platform&#x60;);
+        }
+        if(this.sqlite !&#x3D; null) {
+            const path: string &#x3D; folderPath ? folderPath : &quot;default&quot;;
+            const dbList: string[] &#x3D; dbNameList ? dbNameList : [];
+            return this.sqlite.moveDatabasesAndAddSuffix(path, dbList);
+        } else {
+            throw new Error(&#x60;can&#x27;t move the databases&#x60;);
+        }
+    }
+
+    async getFromHTTPRequest(url: string, overwrite?: boolean): Promise&lt;void&gt; {
+        const mOverwrite: boolean &#x3D; overwrite !&#x3D; null ? overwrite : true;
+        if (url.length &#x3D;&#x3D;&#x3D; 0) {
+            return Promise.reject(new Error(&#x60;Must give an url to download&#x60;));
+        }
+        if(this.sqlite !&#x3D; null) {
+            return this.sqlite.getFromHTTPRequest(url, mOverwrite);
+        } else {
+            throw new Error(&#x60;can&#x27;t download the database&#x60;);
+        }
+    }
+
+    /**
+     * Import from a Json Object
+     * @param jsonstring 
+     */
+    async importFromJson(jsonstring:string): Promise&lt;capSQLiteChanges&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.importFromJson(jsonstring));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+                    
+    }
+
+    /**
+     * Is Json Object Valid
+     * @param jsonstring Check the validity of a given Json Object
+     */
+
+    async isJsonValid(jsonstring:string): Promise&lt;capSQLiteResult&gt; {
+        if(this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.isJsonValid(jsonstring));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+
+    }
+
+    /**
+     * Copy databases from public/assets/databases folder to application databases folder
+     */
+    async copyFromAssets(overwrite?: boolean): Promise&lt;void&gt; { 
+        const mOverwrite: boolean &#x3D; overwrite !&#x3D; null ? overwrite : true;
+        console.log(&#x60;&amp;&amp;&amp;&amp; mOverwrite ${mOverwrite}&#x60;);
+        if (this.sqlite !&#x3D; null) {
+            try {
+                return Promise.resolve(await this.sqlite.copyFromAssets(mOverwrite));
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+
+    /**
+     * Initialize the Web store
+     */
+     async initWebStore(): Promise&lt;void&gt; {
+        if(this.platform !&#x3D;&#x3D; &#x27;web&#x27;)  {
+            return Promise.reject(new Error(&#x60;not implemented for this platform: ${this.platform}&#x60;));
+        }
+        if(this.sqlite !&#x3D; null) {
+            try {
+                await this.sqlite.initWebStore();
+                return Promise.resolve();
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open&#x60;));
+        }
+    }
+    /**
+     * Save a database to store
+     * @param database 
+     */
+     async saveToStore(database:string): Promise&lt;void&gt; {
+        if(this.platform !&#x3D;&#x3D; &#x27;web&#x27;)  {
+            return Promise.reject(new Error(&#x60;not implemented for this platform: ${this.platform}&#x60;));
+        }
+        if(this.sqlite !&#x3D; null) {
+            try {
+                await this.sqlite.saveToStore(database);
+                return Promise.resolve();
+            } catch (err) {
+                return Promise.reject(new Error(err));
+            }
+        } else {
+            return Promise.reject(new Error(&#x60;no connection open for ${database}&#x60;));
+        }
+    }
+    
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'SQLiteService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

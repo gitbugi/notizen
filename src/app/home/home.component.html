@@ -1,0 +1,98 @@
+<ion-menu contentId="main-content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Remove Category</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+        <ion-list>
+            <ion-item>
+                <ion-select placeholder="Select fruit" (ionChange)="getSelectedCategory($event);">
+                    <ion-select-option *ngFor="let category of categorys" value=" {{ category.categoryname }}"> {{category.categoryname}}</ion-select-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+        <ion-button color="danger" (click)="removeCategory()">Remove</ion-button>
+    </ion-content>
+</ion-menu>
+
+<ion-header>
+    <ion-toolbar>
+        <div class="title" id="main-content">
+            <ion-buttons slot="start">
+                <ion-menu-button>
+                    <ion-icon name="trash-outline" style="color: red"></ion-icon>
+                </ion-menu-button>
+            </ion-buttons>
+
+            <ion-title>Notizen</ion-title>
+            <ion-fab (click)="addCategory()" slot="fixed" vertical="top" horizontal="end">
+                <ion-fab-button>
+                    <ion-icon name="add"></ion-icon>
+                </ion-fab-button>
+            </ion-fab>
+        </div>
+
+        <ion-segment color="dark" value="dark" [scrollable]="true" [(ngModel)]="categoryname" (ngModelChange)="onSegmentChange()">
+            <!--(mousedown)="segmentMousedown(category.categoryname)" (mouseup)="mouseUp()" (mouseleave)="mouseUp()"-->
+            <ion-segment-button *ngFor="let category of categorys" value="{{ category.categoryname }}">
+                <ion-label> {{ category.categoryname }} </ion-label>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <h2> {{ categoryname }}</h2>
+
+    <div class="table">
+        <ion-item-sliding *ngFor="let data of listdata">
+            <ion-item class="table-line" (click)="clickOnCheckbox(data)">
+                <ion-checkbox slot="start" [checked]="data.finished"></ion-checkbox>
+                <ion-label>
+                    <div class="dataName" [ngClass]="{'txt-lineThrough' : data.finished}">
+                        {{ data.name }}
+                    </div>
+                    <div class="dataComment  ion-text-wrap"> {{ data.comment }} </div>
+                </ion-label>
+            </ion-item>
+
+            <ion-item-options>
+                <ion-item-option color="danger" (click)="deleteListItem(data)">Delete</ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+    </div>
+
+    <ion-button fill="solid" id="open-modal" expand="block">+</ion-button>
+
+    <!--Modal für ListEintrag-->
+    <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+        <ng-template>
+            <ion-header>
+                <ion-toolbar>
+                    <ion-buttons slot="start">
+                        <ion-button (click)="cancel()">Cancel</ion-button>
+                    </ion-buttons>
+                    <ion-title>Add Line</ion-title>
+                    <ion-buttons slot="end">
+                        <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+                    </ion-buttons>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+                <ion-item>
+                    <ion-label position="stacked">name</ion-label>
+                    <ion-input type="text" placeholder="Bookname" [(ngModel)]="name" [autofocus]="true"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="stacked">Commit</ion-label>
+                    <ion-input type="text" placeholder="Commit" [(ngModel)]="comment" (keydown.enter)="confirm()"></ion-input>
+                </ion-item>
+            </ion-content>
+        </ng-template>
+
+    </ion-modal>
+
+
+</ion-content>
