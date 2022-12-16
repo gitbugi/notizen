@@ -41,6 +41,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   timeout: any;         //NodeJS.Timeout;
 
   selectedCategory = ""       //For remove Category
+  @ViewChild('select') select!: any;         
 
   constructor(private _sqlite: SQLiteService,
     private _detailService: DetailService,
@@ -138,6 +139,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         this.listdata = (await db.query(`SELECT * FROM list WHERE categoryname="${this.categoryname}"`, [])).values
       })  
     }
+    this.select.value = "";
     this.menu.close();
   };
 

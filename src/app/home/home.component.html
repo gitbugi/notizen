@@ -7,7 +7,7 @@
     <ion-content class="ion-padding">
         <ion-list>
             <ion-item>
-                <ion-select placeholder="Select fruit" (ionChange)="getSelectedCategory($event);">
+                <ion-select placeholder="Select Category" (ionChange)="getSelectedCategory($event);" #select>
                     <ion-select-option *ngFor="let category of categorys" value=" {{ category.categoryname }}"> {{category.categoryname}}</ion-select-option>
                 </ion-select>
             </ion-item>
@@ -82,12 +82,12 @@
             <ion-content class="ion-padding">
                 <ion-item>
                     <ion-label position="stacked">name</ion-label>
-                    <ion-input type="text" placeholder="Bookname" [(ngModel)]="name" [autofocus]="true"></ion-input>
+                    <ion-input type="text" placeholder="name" [(ngModel)]="name" [autofocus]="true"></ion-input>
                 </ion-item>
 
                 <ion-item>
                     <ion-label position="stacked">Commit</ion-label>
-                    <ion-input type="text" placeholder="Commit" [(ngModel)]="comment" (keydown.enter)="confirm()"></ion-input>
+                    <ion-input type="text" placeholder="commit" [(ngModel)]="comment" (keydown.enter)="confirm()"></ion-input>
                 </ion-item>
             </ion-content>
         </ng-template>
